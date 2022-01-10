@@ -1,2 +1,4 @@
 export const GET_DATA = 'GET_DATA';
-export const GET_POKEMON_STATS = "GET_POKEMON_STATS";
+export const GET_POKEMON_STATS = 'GET_POKEMON_STATS';
+export const RESET_POKEMON_STATS = 'RESET_POKEMON_STATS';
+export const GET_TYPES = 'GET_TYPES';

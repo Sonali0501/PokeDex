@@ -1,0 +1,90 @@
+.card{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(201, 211, 253, 0.72); 
+    box-shadow: 0px 0px 14px -3px rgba(201, 211, 253, 0.72);
+    
+    .cardImg{
+        height: 120px;
+        color: #282c34;
+    }
+
+    .cardTitle {
+        color: #282c34;
+        font-weight: 600;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .cardBtn{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.modal {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        
+        .basicInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            border-right: 1px solid #282c34;
+            .top{
+                display: flex;
+                gap: 16px;
+                .img{
+                    height: 120px;
+                    color: #282c34;
+                    object-fit: contain;
+                    max-width: 120px;
+                }
+
+                .id{
+                    margin: 0px;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+
+            .bottom{
+                display: flex;
+                gap: 10px;
+
+                .badge{
+                    background-color: #282c34 !important;
+                    font-size: 15px;
+                    padding: 0.65em 0.65em;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .modal{
+        .wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+
+            .basicInfo{
+                border-right: none;
+                border-bottom: 1px solid #282c34;
+                padding-bottom: 16px;
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+}

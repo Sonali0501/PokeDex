@@ -1,0 +1,35 @@
+.stat{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+
+    .statName{
+        margin: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: right;
+        color: #282c34;
+    }
+
+    .progress-bar{
+        background-color: #617499 !important;
+    }
+}
+
+// @media only screen and (max-width: 600px){
+//     .stat{
+//         display: grid;
+//         grid-template-columns: 1fr 2fr;
+//         align-items: center;
+//         gap: 20px;
+    
+//         .statName{
+//             margin: 0px;
+//             font-weight: 500;
+//             font-size: 16px;
+//             text-align: right;
+//             color: #282c34;
+//         }
+//     }
+// }
